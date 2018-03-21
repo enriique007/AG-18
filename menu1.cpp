@@ -25,7 +25,11 @@ void display(void)
 void menu(int valor){
     if(valor == 1)
     {
-      punto(0,0);
+      glutWireTorus(0.5, 1.0, 20, 20);
+    }
+    if(valor == 2)
+    {
+      glutWireTeapot(1.0);
     }
     if(valor == 3)
     {
@@ -38,8 +42,9 @@ void menu(int valor){
 void menu_opciones(void)
 {
   glutCreateMenu(menu);
-  glutAddMenuEntry("Punto",1);
-  glutAddMenuEntry("Salir",2);
+  glutAddMenuEntry("Torus",1);
+  glutAddMenuEntry("Tetera",2);
+  glutAddMenuEntry("Salir",3);
   glutAttachMenu(GLUT_RIGHT_BUTTON); // Eligiendo con el click derecho del raton
 
 }
