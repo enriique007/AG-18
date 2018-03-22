@@ -39,7 +39,7 @@ void menu(int valor){
 
 void menu_opciones(void)
 {
-	glutCreateMenu(menu);
+    glutCreateMenu(menu);
     glutAddMenuEntry("Torus",1);
     glutAddMenuEntry("Tetera",2);
     glutAddMenuEntry("Salir",3);
@@ -66,8 +66,6 @@ int main(int argc, char** argv)
    glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
    glutInitWindowSize (500, 500);
    glutInitWindowPosition (100, 100);
-  
-        
    glutCreateWindow ("Ejemplos de Menus");
    init();
    glutDisplayFunc(display);
